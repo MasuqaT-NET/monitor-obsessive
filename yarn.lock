@@ -14,6 +14,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@antfu/utils@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@antfu/utils@npm:0.4.0"
+  dependencies:
+    "@types/throttle-debounce": ^2.1.0
+  checksum: 1c679120c0b6a4433dc59c44b54d046cd0316b793120c1a4569671ed8307ab94734a04f9ad502112a07e5bd5db2ac82736d1a7e857aa0aa91029e1f1a59e7a0c
+  languageName: node
+  linkType: hard
+
 "@babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.12.13, @babel/code-frame@npm:^7.16.7":
   version: 7.16.7
   resolution: "@babel/code-frame@npm:7.16.7"
@@ -981,6 +990,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/throttle-debounce@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@types/throttle-debounce@npm:2.1.0"
+  checksum: 70e219d000595108fce0dc624c8296e37cdb174b528e09c939da18e619da1c6df86b088659f5eb93cb146bd5fe2954597823c2e1f0849dc8f6585d87cbbf71b7
+  languageName: node
+  linkType: hard
+
 "@types/yargs-parser@npm:*":
   version: 20.2.1
   resolution: "@types/yargs-parser@npm:20.2.1"
@@ -1127,6 +1143,32 @@ __metadata:
     react-refresh: ^0.11.0
     resolve: ^1.22.0
   checksum: d838018f591ab1db96d5887eaeef8cfb9214842e7ac00cb196b815ffa453be150c218990f254c5f1dc206903b5c43f8c9c6a60208d075ea268307b6488de3a0d
+  languageName: node
+  linkType: hard
+
+"@windicss/config@npm:1.7.1":
+  version: 1.7.1
+  resolution: "@windicss/config@npm:1.7.1"
+  dependencies:
+    debug: ^4.3.3
+    jiti: ^1.12.9
+    windicss: ^3.4.3
+  checksum: ba0e9032311c42177c211b052a216628ce0a6db22f3adaac5d3ce63c050ad3925ae65e1f662e31007485c3c8f169101c56f0a1f2635c380a60d416efcdb1d189
+  languageName: node
+  linkType: hard
+
+"@windicss/plugin-utils@npm:1.7.1":
+  version: 1.7.1
+  resolution: "@windicss/plugin-utils@npm:1.7.1"
+  dependencies:
+    "@antfu/utils": ^0.4.0
+    "@windicss/config": 1.7.1
+    debug: ^4.3.3
+    fast-glob: ^3.2.11
+    magic-string: ^0.25.7
+    micromatch: ^4.0.4
+    windicss: ^3.4.3
+  checksum: 85d5d2142e2eae03952530ec9e81967d1dc24cc88ecb26c5e8065464a516d329c1ce28e4a56221e9864e515e5c57b3ac2b4c6a3a6ae1abc372dd84fa595eaf5e
   languageName: node
   linkType: hard
 
@@ -1774,7 +1816,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2":
+"debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.3":
   version: 4.3.3
   resolution: "debug@npm:4.3.3"
   dependencies:
@@ -2556,7 +2598,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.2.9":
+"fast-glob@npm:^3.2.11, fast-glob@npm:^3.2.9":
   version: 3.2.11
   resolution: "fast-glob@npm:3.2.11"
   dependencies:
@@ -3797,6 +3839,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jiti@npm:^1.12.9":
+  version: 1.13.0
+  resolution: "jiti@npm:1.13.0"
+  bin:
+    jiti: bin/jiti.js
+  checksum: 1e74d99b9a551df952057b8bce56f744caccca0044aa05021643e6ce0837ed47bc2d5b290fecb462e32988c6bf318afe77e341310c5ecf6bb63c19c80c929cb6
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^3.0.0 || ^4.0.0, js-tokens@npm:^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
@@ -3936,6 +3987,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"kolorist@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "kolorist@npm:1.5.1"
+  checksum: c113be08834fc03a24699612141c79879fceba9ff9765ad500507fb594ee4fa3465a3453ea90bbc9b0dd82f7ba5dbd79814da28e9ebaf8da27266a0088ba2714
+  languageName: node
+  linkType: hard
+
 "leven@npm:^3.1.0":
   version: 3.1.0
   resolution: "leven@npm:3.1.0"
@@ -4020,6 +4078,15 @@ __metadata:
   dependencies:
     yallist: ^4.0.0
   checksum: f97f499f898f23e4585742138a22f22526254fdba6d75d41a1c2526b3b6cc5747ef59c5612ba7375f42aca4f8461950e925ba08c991ead0651b4918b7c978297
+  languageName: node
+  linkType: hard
+
+"magic-string@npm:^0.25.7":
+  version: 0.25.7
+  resolution: "magic-string@npm:0.25.7"
+  dependencies:
+    sourcemap-codec: ^1.4.4
+  checksum: 727a1fb70f9610304fe384f1df0251eb7d1d9dd779c07ef1225690361b71b216f26f5d934bfb11c919b5b0e7ba50f6240c823a6f2e44cfd33d4a07d7747ca829
   languageName: node
   linkType: hard
 
@@ -4228,6 +4295,8 @@ __metadata:
     react-dom: 18.0.0-rc.0
     typescript: 4.5.5
     vite: 2.8.4
+    vite-plugin-windicss: 1.7.1
+    windicss: 3.4.3
   languageName: unknown
   linkType: soft
 
@@ -5124,6 +5193,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sourcemap-codec@npm:^1.4.4":
+  version: 1.4.8
+  resolution: "sourcemap-codec@npm:1.4.8"
+  checksum: b57981c05611afef31605732b598ccf65124a9fcb03b833532659ac4d29ac0f7bfacbc0d6c5a28a03e84c7510e7e556d758d0bb57786e214660016fb94279316
+  languageName: node
+  linkType: hard
+
 "sprintf-js@npm:~1.0.2":
   version: 1.0.3
   resolution: "sprintf-js@npm:1.0.3"
@@ -5564,6 +5640,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vite-plugin-windicss@npm:1.7.1":
+  version: 1.7.1
+  resolution: "vite-plugin-windicss@npm:1.7.1"
+  dependencies:
+    "@windicss/plugin-utils": 1.7.1
+    debug: ^4.3.3
+    kolorist: ^1.5.1
+    windicss: ^3.4.3
+  peerDependencies:
+    vite: ^2.0.1
+  checksum: 273d40adb0fb1f02c4b04fce7d7820c159588a35c4770253c99b74bfd653aebe9af21b64bb026d3595c821b00ce6c06ae1de8d4d00dc3103fe8897f5c482127d
+  languageName: node
+  linkType: hard
+
 "vite@npm:2.8.4":
   version: 2.8.4
   resolution: "vite@npm:2.8.4"
@@ -5691,6 +5781,15 @@ __metadata:
   dependencies:
     string-width: ^1.0.2 || 2 || 3 || 4
   checksum: d5fc37cd561f9daee3c80e03b92ed3e84d80dde3365a8767263d03dacfc8fa06b065ffe1df00d8c2a09f731482fcacae745abfbb478d4af36d0a891fad4834d3
+  languageName: node
+  linkType: hard
+
+"windicss@npm:3.4.3, windicss@npm:^3.4.3":
+  version: 3.4.3
+  resolution: "windicss@npm:3.4.3"
+  bin:
+    windicss: cli/index.js
+  checksum: 3029c69249a1f5676ce2b4a991830bf0f86f47098ff1d6fa78668cd165e0388800c8edf479fd3209deefa5b027de50fdc10f02f6ec0de0af55db1afdaf5df7f2
   languageName: node
   linkType: hard
 

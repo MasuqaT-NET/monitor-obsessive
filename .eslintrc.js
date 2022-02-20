@@ -10,6 +10,9 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "prettier",
   ],
+  rules: {
+    "react/react-in-jsx-scope": "off", // New JSX transform
+  },
   overrides: [
     {
       files: ["*.ts", "*.tsx"],
