@@ -1,0 +1,8 @@
+{
+  "name": "monitor-obsessive",
+  "version": "1.0.0",
+  "repository": "https://github.com/MasuqaT-NET/monitor-obsessive.git",
+  "author": "MasuqaT <occar@hotmail.co.jp>",
+  "license": "AGPL",
+  "packageManager": "yarn@3.1.1"
+}
