@@ -1146,6 +1146,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vitejs/plugin-react@patch:@vitejs/plugin-react@1.2.0#./vitejs_plugin-react.patch::locator=monitor-obsessive%40workspace%3A.":
+  version: 1.2.0
+  resolution: "@vitejs/plugin-react@patch:@vitejs/plugin-react@npm%3A1.2.0#./vitejs_plugin-react.patch::version=1.2.0&hash=1241a3&locator=monitor-obsessive%40workspace%3A."
+  dependencies:
+    "@babel/core": ^7.16.12
+    "@babel/plugin-transform-react-jsx": ^7.16.7
+    "@babel/plugin-transform-react-jsx-development": ^7.16.7
+    "@babel/plugin-transform-react-jsx-self": ^7.16.7
+    "@babel/plugin-transform-react-jsx-source": ^7.16.7
+    "@rollup/pluginutils": ^4.1.2
+    react-refresh: ^0.11.0
+    resolve: ^1.22.0
+  checksum: 673ae7b5dab5a72cb682e231be98171223c6c753d98adedf254be24157197a531281fed05321da66427e554e0ad51b48eaa1755455e9c96621c76d06e4a59997
+  languageName: node
+  linkType: hard
+
 "@windicss/config@npm:1.7.1":
   version: 1.7.1
   resolution: "@windicss/config@npm:1.7.1"
@@ -4298,7 +4314,7 @@ __metadata:
     "@types/react-dom": 17.0.11
     "@typescript-eslint/eslint-plugin": 5.12.0
     "@typescript-eslint/parser": 5.12.0
-    "@vitejs/plugin-react": 1.2.0
+    "@vitejs/plugin-react": "patch:@vitejs/plugin-react@1.2.0#./vitejs_plugin-react.patch"
     eslint: 8.9.0
     eslint-config-prettier: 8.4.0
     eslint-import-resolver-typescript: 2.5.0

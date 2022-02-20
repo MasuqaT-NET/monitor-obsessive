@@ -1,0 +1,12 @@
+diff --git a/dist/index.js b/dist/index.js
+index 1fe52867ab741083d92f9e3f8a96372041a5cb41..2a2645c72c0f633b78a9fc1c2f3f611061a3501f 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -406,6 +406,7 @@ function viteReact(opts = {}) {
+               plugins.push([
+                 await loadPlugin("@babel/plugin-transform-react-jsx" + (isProduction ? "" : "-development")),
+                 {
++                  "throwIfNamespace": false,
+                   runtime: "automatic",
+                   importSource: opts.jsxImportSource
+                 }
