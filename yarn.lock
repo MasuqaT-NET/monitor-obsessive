@@ -81,6 +81,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/prop-types@npm:*":
+  version: 15.7.4
+  resolution: "@types/prop-types@npm:15.7.4"
+  checksum: ef6e1899e59b876c273811b1bd845022fc66d5a3d11cb38a25b6c566b30514ae38fe20a40f67622f362a4f4f7f9224e22d8da101cff3d6e97e11d7b4c307cfc1
+  languageName: node
+  linkType: hard
+
+"@types/react-dom@npm:17.0.11":
+  version: 17.0.11
+  resolution: "@types/react-dom@npm:17.0.11"
+  dependencies:
+    "@types/react": "*"
+  checksum: 4d5730dffbef86c887cecad7e3cecda424ce6a64d0b5441c63b5b015d48219868660a2bb1aa15e897e565ad8867fa6b885d4358b04e1c4e589ba4c07c3fda55c
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:*, @types/react@npm:17.0.39":
+  version: 17.0.39
+  resolution: "@types/react@npm:17.0.39"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: bf04d3c2894559012710d595553e12b422d3b91cd8f4f7e122d8cb044ba9c2ba17f6e8a4e09581359cc5509ddc59cd8c8fabd6774f3505a40a45393f074d6e6e
+  languageName: node
+  linkType: hard
+
+"@types/scheduler@npm:*":
+  version: 0.16.2
+  resolution: "@types/scheduler@npm:0.16.2"
+  checksum: b6b4dcfeae6deba2e06a70941860fb1435730576d3689225a421280b7742318d1548b3d22c1f66ab68e414f346a9542f29240bc955b6332c5b11e561077583bc
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/eslint-plugin@npm:5.12.0":
   version: 5.12.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.12.0"
@@ -380,6 +414,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"csstype@npm:^3.0.2":
+  version: 3.0.10
+  resolution: "csstype@npm:3.0.10"
+  checksum: 20a8fa324f2b33ddf94aa7507d1b6ab3daa6f3cc308888dc50126585d7952f2471de69b2dbe0635d1fdc31223fef8e070842691877e725caf456e2378685a631
+  languageName: node
+  linkType: hard
+
 "debug@npm:^2.6.9":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -499,7 +540,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.4.0":
+"eslint-config-prettier@npm:8.4.0":
   version: 8.4.0
   resolution: "eslint-config-prettier@npm:8.4.0"
   peerDependencies:
@@ -530,7 +571,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.25.4":
+"eslint-plugin-import@npm:2.25.4":
   version: 2.25.4
   resolution: "eslint-plugin-import@npm:2.25.4"
   dependencies:
@@ -553,7 +594,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^26.1.1":
+"eslint-plugin-jest@npm:26.1.1":
   version: 26.1.1
   resolution: "eslint-plugin-jest@npm:26.1.1"
   dependencies:
@@ -570,7 +611,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:^4.3.0":
+"eslint-plugin-react-hooks@npm:4.3.0":
   version: 4.3.0
   resolution: "eslint-plugin-react-hooks@npm:4.3.0"
   peerDependencies:
@@ -579,7 +620,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.28.0":
+"eslint-plugin-react@npm:7.28.0":
   version: 7.28.0
   resolution: "eslint-plugin-react@npm:7.28.0"
   dependencies:
@@ -1239,7 +1280,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.4.0":
+"loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -1296,15 +1337,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "monitor-obsessive@workspace:."
   dependencies:
+    "@types/react": 17.0.39
+    "@types/react-dom": 17.0.11
     "@typescript-eslint/eslint-plugin": 5.12.0
     "@typescript-eslint/parser": 5.12.0
     eslint: 8.9.0
-    eslint-config-prettier: ^8.4.0
-    eslint-plugin-import: ^2.25.4
-    eslint-plugin-jest: ^26.1.1
-    eslint-plugin-react: ^7.28.0
-    eslint-plugin-react-hooks: ^4.3.0
-    prettier: ^2.5.1
+    eslint-config-prettier: 8.4.0
+    eslint-plugin-import: 2.25.4
+    eslint-plugin-jest: 26.1.1
+    eslint-plugin-react: 7.28.0
+    eslint-plugin-react-hooks: 4.3.0
+    prettier: 2.5.1
+    react: 18.0.0-rc.0
+    react-dom: 18.0.0-rc.0
     typescript: 4.5.5
   languageName: unknown
   linkType: soft
@@ -1519,7 +1564,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.5.1":
+"prettier@npm:2.5.1":
   version: 2.5.1
   resolution: "prettier@npm:2.5.1"
   bin:
@@ -1553,10 +1598,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-dom@npm:18.0.0-rc.0":
+  version: 18.0.0-rc.0
+  resolution: "react-dom@npm:18.0.0-rc.0"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+    scheduler: ^0.21.0-rc.0
+  peerDependencies:
+    react: ^18.0.0-rc.0
+  checksum: 713db349fad704527d328275d43c57ca670c801a6592e5f308c5572a7559540d0dcfc0b065a878cea4764f742d27fb2ed1065092ca40589759d5b51ecce6773b
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
+  languageName: node
+  linkType: hard
+
+"react@npm:18.0.0-rc.0":
+  version: 18.0.0-rc.0
+  resolution: "react@npm:18.0.0-rc.0"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+  checksum: bb886ab411d7732ca8aace98bf0015a31f30b010bd674accdbbf4a474429b656b4463a58e677f33972bab9b820e949765e27fc6c468b13833b515e50b2d0b999
   languageName: node
   linkType: hard
 
@@ -1654,6 +1722,16 @@ __metadata:
   dependencies:
     queue-microtask: ^1.2.2
   checksum: cb4f97ad25a75ebc11a8ef4e33bb962f8af8516bb2001082ceabd8902e15b98f4b84b4f8a9b222e5d57fc3bd1379c483886ed4619367a7680dad65316993021d
+  languageName: node
+  linkType: hard
+
+"scheduler@npm:^0.21.0-rc.0":
+  version: 0.21.0-rc.0-next-fe905f152-20220107
+  resolution: "scheduler@npm:0.21.0-rc.0-next-fe905f152-20220107"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+  checksum: 72d1e7451c0af41ba6dcf53aaafeb72620e9d4d4cf30b3709f7a93c4e31fc872ce574a0a7bef168175ee4d148a2b9ca2e318d02387600c8b7f95da0d4ff185bb
   languageName: node
   linkType: hard
 
